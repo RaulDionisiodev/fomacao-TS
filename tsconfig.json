@@ -1,6 +1,6 @@
 {
     "compilerOptions": { //opções de compilação
-        "outDir": "dist/js", // os arquivos compilados vão pra pasta dist
+        "outDir": "app/dist/js", // os arquivos compilados vão pra pasta dist
         "target": "ES6", // a compilação será feita para ES6
         "noEmitOnError": true, // Não compila caso hajam erros de sintaxe nos arquivos .ts
         "noImplicitAny": true, // Não permite que o tipo any seja inferido implicitamente. Com isso os tipos precisarão estar sempre
