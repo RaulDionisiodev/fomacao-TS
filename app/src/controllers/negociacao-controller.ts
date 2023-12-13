@@ -7,6 +7,7 @@ import { Negociacoes } from "../models/negociacoes.js";
 import { NegociacoesService } from "../services/negociacoes-service.js";
 import { MensagemView } from "../views/mensagem-view.js";
 import { NegociacoesView } from "../views/negociacoes-view.js";
+import { imprimir } from "../utils/imprimir.js";
 
 export class NegociacaoController {
 
@@ -37,6 +38,7 @@ export class NegociacaoController {
             return;    
         } 
         this.negociacoes.adiciona(negociacao)
+        imprimir(negociacao, this.negociacoes)
         this.atualizaView()
         this.limparFormulario()
     }

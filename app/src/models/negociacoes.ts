@@ -1,6 +1,7 @@
-import { Negociacao } from "./negociacao";
+import { Imprimivel } from "../utils/imprimivel.js";
+import { Negociacao } from "./negociacao.js";
 
-export class Negociacoes {
+export class Negociacoes extends Imprimivel {
     private negociacoes: Array<Negociacao> = [];
 
     /*
@@ -19,4 +20,8 @@ export class Negociacoes {
         Outra forma de declarar a função de array readyonly é:
         lista(): readyonly Negociacao[] {
     */ 
+
+    public paraTexto() : string {
+        return JSON.stringify(this.negociacoes, null, 2)
+    }
 }
