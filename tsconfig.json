@@ -8,7 +8,9 @@
         "removeComments": true, // Remove comentários na compilação do arquivo: comentários dos arquivos ts não vão para o js
         "strictNullChecks": true, // Diz para o compilador TSC que pare de assumir implicitamente o tipo null para todos os tipos 
         //da aplicação
-        "experimentalDecorators": true //Habilita o uso de decorators no projeto
+        "experimentalDecorators": true, //Habilita o uso de decorators no projeto
+        "sourceMap": false //Quando está true Cria um sourceMap para que seja possível colocar breakpoints nos arquivos ts para debug 
+        // Os Arquivos ts NÃO DEVEM SER ENVIADOS PARA PRODUÇÃO
     },
 
     "include": [
