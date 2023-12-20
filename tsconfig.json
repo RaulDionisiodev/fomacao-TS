@@ -3,8 +3,11 @@
         "outDir": "dist/js", // os arquivos compilados vão pra pasta dist
         "target": "ES6", // a compilação será feita para ES6
         "noEmitOnError": true, // Não compila caso hajam erros de sintaxe nos arquivos .ts
-        "noImplicitAny": true // Não permite que o tipo any seja inferido implicitamente. Com isso os tipos precisarão estar sempre
+        "noImplicitAny": true, // Não permite que o tipo any seja inferido implicitamente. Com isso os tipos precisarão estar sempre
         //explicitos
+        "removeComments": true, // Remove comentários na compilação do arquivo: comentários dos arquivos ts não vão para o js
+        "strictNullChecks": true // Diz para o compilador TSC que pare de assumir implicitamente o tipo null para todos os tipos 
+        //da aplicação
     },
 
     "include": [

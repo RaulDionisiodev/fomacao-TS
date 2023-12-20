@@ -7,11 +7,11 @@ export class Negociacoes {
         outra forma de declarar um array de negociacao é usar Negocicacao[]
     */ 
 
-    adiciona(negociacao: Negociacao) {
+    public adiciona(negociacao: Negociacao) {
         this.negociacoes.push(negociacao);
     }
 
-    lista(): ReadonlyArray<Negociacao> {
+    public lista(): ReadonlyArray<Negociacao> {
         return this.negociacoes
     }
 
